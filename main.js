@@ -53,5 +53,3 @@ setInterval(function() {
 }, 1000);
 
 
-
-//  var cuRd = myDay[myDate.getDay()] + ", " + myMonth[myDate.getMonth()] + " " + day ;
