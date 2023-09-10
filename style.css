@@ -1,0 +1,121 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    font-size: 15pt;
+}
+
+
+.clock{
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(45deg, #112244, #334466);
+}
+
+.container{
+  width: 50%;
+  height: 20%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.hms{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background: rgba(255, 0, 255, 0.1.5);
+  backdrop-filter: blur(40px);
+}
+.container::before {
+  content: '';
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  background: #f41b75;
+  position: absolute;
+  top: -40px;
+  left: -50px;
+  z-index: -1;
+}
+.container::after {
+  content: '';
+  height: 120px;
+  width: 120px;
+  border-radius: 10px;
+  background: #419aff;
+  position: absolute;
+  bottom: -40px;
+  right: -50px;
+  z-index: -1;
+}
+.hms span{
+  color: #fff;
+  font-size: 70px;
+  font-family: 'Times New Roman', Times, serif;
+  width: 80px;
+  display: inline-block;
+  text-align: center;
+  position: relative;
+  text-shadow: 10px 10px 30px #f41b75, -10px -10px 30px #419aff;
+}
+.ampm{
+  position: absolute;
+  font-size: 300px;
+  top: 5%;
+  right: 1%;
+  transform: translate(85%, -85%);
+  text-shadow: -10px 10px 20px deeppink;
+}
+.dfb{
+  color: #fff;
+  font-size: 40px;
+  font-family: 'Times New Roman', Times, serif;
+  position: absolute;
+  transform: translate(-80%, 100%);
+  bottom: 0;
+}
+
+@media (max-width: 858px) {
+  
+  .container{
+    width: 80%;
+    height: 20%;
+  }
+  
+  .container::before {
+     height: 110px;
+     width: 110px;
+     top: -10%;
+     left: -5%;
+   }
+   .container::after {
+     height: 100px;
+     width: 100px;
+     bottom: -10%;
+     right: -5%;
+   }
+  
+  .hms span {
+    font-size: 60px;
+    width: 50px;
+    text-shadow: 10px 10px 30px #f41b75, -10px -10px 30px #419aff;
+  }
+  .ampm{
+    font-size: 250px;
+    top: 1%;
+    right: 2%;
+    transform: translate(20%, -100%);
+  }
+  .dfb{
+    font-size: 30px;
+    transform: translate(-15%, 100%);
+  }
+
+}
