@@ -67,7 +67,7 @@ body {
 }
 .ampm{
   position: absolute;
-  font-size: 300px;
+  font-size: 250px;
   top: 5%;
   right: 1%;
   transform: translate(85%, -85%);
@@ -78,7 +78,7 @@ body {
   font-size: 40px;
   font-family: 'Times New Roman', Times, serif;
   position: absolute;
-  transform: translate(-80%, 100%);
+  transform: translate(-60%, 100%);
   bottom: 0;
 }
 
